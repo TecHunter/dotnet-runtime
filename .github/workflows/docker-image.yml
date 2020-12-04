@@ -31,7 +31,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: dotnet-runtime-alpine38:latest
+        tags: techunter/dotnet-runtime-alpine38:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
